@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'QUTAccess' target in the 'QUTAccess' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
