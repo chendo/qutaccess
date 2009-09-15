@@ -17,7 +17,7 @@
   NSImage *statusHighlightImage;
 }
 
--(IBAction)showMenu:(id)sender;
+-(IBAction)showPreferences:(id)sender;
 -(NSString *)ip;
 
 @end

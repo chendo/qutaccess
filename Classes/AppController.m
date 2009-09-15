@@ -35,17 +35,20 @@
   [statusItem setHighlightMode:YES];
   
   NSTimer *timer;
-  timer = [NSTimer scheduledTimerWithTimeInterval:3.0
+  timer = [NSTimer scheduledTimerWithTimeInterval:60.0
                                            target:self
                                          selector: @selector(updateTime)
                                          userInfo:nil
                                           repeats: YES];
 }
 
-- (void) updateTime {
-  NSLog(@"updating time");
+- (void) updateIP {
   [self willChangeValueForKey:@"ip"];
   [self didChangeValueForKey:@"ip"];
+}
+
+-(IBAction)showPreferences:(id)sender {
+	NSLog(@"preferences clicked");
 }
 
 - (void) dealloc {
