@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		585DF8DB105F675D00A2D3D9 /* IXSCNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 585DF8DA105F675D00A2D3D9 /* IXSCNotificationManager.m */; };
 		58918BAB1053E44000EC9444 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58918BAA1053E44000EC9444 /* AppController.m */; };
 		58918BAD1053E4CE00EC9444 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58918BAC1053E4CE00EC9444 /* Icon.png */; };
 		58918C15105403B400EC9444 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58918C14105403B400EC9444 /* SystemConfiguration.framework */; };
@@ -25,8 +26,10 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* QUTAccess_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QUTAccess_Prefix.pch; sourceTree = "<group>"; };
-		58918BA91053E44000EC9444 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		58918BAA1053E44000EC9444 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		585DF8D9105F675D00A2D3D9 /* IXSCNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IXSCNotificationManager.h; path = Classes/IXSCNotificationManager.h; sourceTree = "<group>"; };
+		585DF8DA105F675D00A2D3D9 /* IXSCNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IXSCNotificationManager.m; path = Classes/IXSCNotificationManager.m; sourceTree = "<group>"; };
+		58918BA91053E44000EC9444 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Classes/AppController.h; sourceTree = "<group>"; };
+		58918BAA1053E44000EC9444 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = Classes/AppController.m; sourceTree = "<group>"; };
 		58918BAC1053E4CE00EC9444 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		58918C14105403B400EC9444 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 			children = (
 				58918BA91053E44000EC9444 /* AppController.h */,
 				58918BAA1053E44000EC9444 /* AppController.m */,
+				585DF8D9105F675D00A2D3D9 /* IXSCNotificationManager.h */,
+				585DF8DA105F675D00A2D3D9 /* IXSCNotificationManager.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				58918BAB1053E44000EC9444 /* AppController.m in Sources */,
+				585DF8DB105F675D00A2D3D9 /* IXSCNotificationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
