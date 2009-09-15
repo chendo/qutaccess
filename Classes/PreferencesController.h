@@ -13,5 +13,6 @@
     IBOutlet id window;
 }
 
+- (IBAction)onWindowClose:(id)sender;
 - (IBAction) checkAuthDetails:(id) sender;
 @end

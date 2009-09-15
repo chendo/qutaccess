@@ -25,4 +25,8 @@
 	NSLog(@"dealloc preferecences");
 	[super dealloc];
 }
+
+- (IBAction)onWindowClose:(id)sender {
+    
+}
 @end
