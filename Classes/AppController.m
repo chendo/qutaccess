@@ -54,6 +54,7 @@
 	if ([NSBundle loadNibNamed:@"Preferences" owner: prefs]) {
 		NSLog(@"shit loaded yay");
 	}
+  [prefs autorelease];
 }
 
 - (void) dealloc {
