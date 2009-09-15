@@ -7,6 +7,7 @@
 //
 
 #import "AppController.h"
+#import "PreferencesController.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 
 
@@ -49,6 +50,10 @@
 
 -(IBAction)showPreferences:(id)sender {
 	NSLog(@"preferences clicked");
+	PreferencesController *prefs = [[PreferencesController alloc] init];
+	if ([NSBundle loadNibNamed:@"Preferences" owner: prefs]) {
+		NSLog(@"shit loaded yay");
+	}
 }
 
 - (void) dealloc {
