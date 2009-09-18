@@ -7,9 +7,12 @@
 //
 
 #import "PreferencesController.h"
-
+#import "EMKeychainProxy.h"
 
 @implementation PreferencesController
+
+@synthesize username;
+@synthesize password;
 
 - (IBAction) checkAuthDetails:(id) sender {
 	NSLog(@"check auth details");
@@ -17,6 +20,9 @@
 
 - (void)awakeFromNib {
 	NSLog(@"awake from nib preferences");
+  self.username = [[NSUserDefaults standardUserDefaults] objectForKey:@"username"];
+  EMKeychainItem* entry = [[EMKeychainProxy sharedProxy] genericKeychainItemForService:@"QUTAccess" withUsername: self.username];
+  self.password = [entry password];
 	//[window setExcludedFromWindowsMenu:];
 	[window makeKeyAndOrderFront:nil];
 }
